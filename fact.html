@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facotorial form</title>
+
+    <h1>
+        <center>
+            Program to find factorial of a number
+        </center>
+    </h1>
+</head>
+<body bgcolor="lightblue">
+    
+    <form action="/findfact" method="post">
+        
+        <center>
+        <input type="text" name="t1" placeholder="Enter a number" required >
+
+        <input type="submit" value="Find factorial" >
+        </center>
+
+    </form>
+
+    {% if result %}
+    <center><h1>   
+    {{ result }}
+     </h1></center>
+    {% endif %}
+    
+
+
+</body>
+</html>
